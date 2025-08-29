@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alternance — Martin DUCROS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="brand">
+    <span>Martin DUCROS</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="alternance.html" class="nav-link active">Alternance</a>
+    <a href="competences.html" class="nav-link">Compétences</a>
+    <a href="competences_entreprise.html" class="nav-link">Compétences entreprise</a>
+    <a href="projets.html" class="nav-link">Projets</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Mon alternance chez Rhôn’Telecom</h1>
+
+  <section class="card">
+    <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+      <div style="flex:1;">
+        <h2>L’entreprise</h2>
+        <p>Depuis 2 ans, <strong>Rhôn’Telecom</strong> est l’entreprise où j’évolue chaque jour. Basée à Saint-Priest (parc technologique SP2), l’entreprise est spécialisée dans les télécommunications et plus précisément dans les technologies de l’information et de la communication. Elle fait partie du groupe Altice, au même titre que SFR.</p>
+        <p>Rhôn’Telecom intervient sur l’ensemble de la chaîne : étude d’implantation des réseaux fixes et mobiles, supervision, et sécurisation du backbone. Elle contribue fortement au déploiement et au maintien des antennes <strong>2G/3G/4G/5G</strong>.</p>
+        <p>L’entreprise compte plus de <strong>1 450 experts</strong> répartis en France, dispose d’une dizaine de sites (et un à Casablanca), et a réalisé <strong>127 M€ de chiffre d’affaires en 2024</strong>.</p>
+      </div>
+      <div style="flex:0 0 220px; text-align:center;">
+        <!-- Espace logo entreprise -->
+        <img src="screens_projets/rt.jpg" alt="Logo Rhôn’Telecom" style="max-width:180px; height:auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipes -->
+  <section class="card">
+    <h2>Les équipes</h2>
+    <p>Sur le site de Saint-Priest (SP2), plusieurs pôles se complètent pour garantir la qualité de service :</p>
+    <ul>
+      <li><strong>Supervision</strong> : surveillance temps réel de l’ensemble des sites, alertes immédiates en cas d’incident.</li>
+      <li><strong>H+X</strong> : prise en charge des dérives qui persistent au-delà de 4 h (étape avant J+1).</li>
+      <li><strong>Transmission</strong> : gestion des alertes liées aux faisceaux hertziens (acheminement vers le cœur de réseau).</li>
+      <li><strong>OPTIM</strong> : optimisation de la performance (événements, axes routiers/ferroviaires, zones souterraines).</li>
+      <li><strong>SI</strong> (Systèmes d’Information) : développement et maintenance des outils internes pour les équipes.</li>
+    </ul>
+    <p>Ces équipes s’articulent en chaîne pour diagnostiquer, traiter et améliorer continuellement le réseau mobile.</p>
+  </section>
+
+  <!-- Mon équipe -->
+  <section class="card">
+    <h2>Mon équipe : Performance J+1</h2>
+    <p>Je fais partie de l’équipe <strong>Performance J+1</strong>, dédiée à la maintenance et à la résolution des problèmes liés aux chaînes antennaires du réseau SFR. Nous intervenons généralement <strong>un jour après</strong> l’apparition d’une dérive pour assurer la continuité et la qualité de service.</p>
+    <p>Nous collaborons également sur certains modules avec <strong>Bouygues Telecom</strong>, dans le cadre de l’accord avec SFR.</p>
+    <p>L’équipe inclut :</p>
+    <ul>
+      <li><strong>Vincent Mounier</strong>, maître d’apprentissage et responsable d’équipe.</li>
+      <li><strong>Salimata Traoré</strong>, référente technique (support expert et amélioration continue des process).</li>
+      <li>Des <strong>chargés de production</strong> pour les problématiques spécifiques hors process standard.</li>
+      <li>Des <strong>agents de production</strong> en charge des alertes quotidiennes.</li>
+    </ul>
+    <p><em>Exemple</em> : en cas de désynchronisation entre fréquences 4G sur un site agrégeant plusieurs bandes, un <strong>redémarrage coordonné des baies</strong> permet souvent de rétablir la synchronisation et la performance.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <span>© <span id="year"></span> Martin DUCROS — BUT Informatique</span>
+    <a href="#top" class="top-link">Retour en haut</a>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
