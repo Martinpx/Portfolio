@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alternance — Martin DUCROS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="brand">
+    <span>Martin DUCROS</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="alternance.html" class="nav-link active">Alternance</a>
+    <a href="competences.html" class="nav-link">Compétences</a>
+    <a href="competences_entreprise.html" class="nav-link">Compétences entreprise</a>
+    <a href="projets.html" class="nav-link">Projets</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Mon alternance chez Rhôn’Telecom</h1>
+
+  <section class="card">
+    <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:260px;">
+        <h2>Rhôn’Telecom</h2>
+        <p>
+          Rhôn’Telecom est une entreprise de télécommunications. Elle déploie, surveille
+          et entretient les réseaux mobiles et fixes en France. Elle participe au bon
+          fonctionnement des antennes 2G, 3G, 4G et 5G pour offrir un réseau stable et rapide.
+        </p>
+
+        <h2>Ce que je fais</h2>
+        <p>
+          Je fais partie de l’équipe <strong>Performance J+1</strong>. Nous corrigeons les problèmes
+          sur les antennes du réseau SFR, en général le jour suivant l’incident. Nous intervenons
+          aussi parfois sur des sites Bouygues, grâce à un accord entre les deux opérateurs.
+          Mon travail au quotidien : analyser les alertes, regarder les indicateurs (KPI),
+          ouvrir des tickets si besoin, agir à distance via les outils, et noter les actions.
+          Je traite beaucoup de cas <strong>Multi-CC</strong> (agrégation de fréquences) et d’autres alertes variées.
+          Quand c’est utile, je fais des actions simples comme le redémarrage coordonné des baies 4G
+          pour resynchroniser. Chaque mois, je gère aussi des cas <strong>MIMO “cellules noires”</strong>
+          (environ 10 à 15). Mon objectif est clair : rétablir vite et éviter que ça se reproduise.
+        </p>
+      </div>
+
+      <div style="flex:0 0 220px; text-align:center;">
+        <img src="screens_projets/rt.jpg" alt="Logo Rhôn’Telecom" style="max-width:180px; height:auto;">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <span>© <span id="year"></span> Martin DUCROS — BUT Informatique</span>
+    <a href="#top" class="top-link">Retour en haut</a>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
